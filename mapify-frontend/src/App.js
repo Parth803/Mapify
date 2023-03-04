@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
+import Map, {Marker} from 'react-map-gl';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Map
+      initialViewState={{
+        longitude: -74,
+        latitude: 40,
+        zoom: 3.5
+      }}
+      style={{width: "100vw", height: "100vh"}}
+      mapboxAccessToken={process.env.REACT_APP_MAPBOX}
+      mapStyle="mapbox://styles/mapbox/streets-v9"
+      >
+      <Marker longitude={-74.0445} latitude={40.6892} anchor="bottom" >
+        <img src="./pin.png" />
+      </Marker>
+    </Map>
     </div>
   );
 }
