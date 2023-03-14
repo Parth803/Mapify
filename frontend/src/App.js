@@ -3,7 +3,7 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import Map from "react-map-gl";
 import { Marker, Popup } from "react-map-gl";
 import { useEffect, useState } from "react";
-import { Room, Star } from "@mui/icons-material"
+import { MapOutlined, Room, Star } from "@mui/icons-material"
 import axios from "axios";
 import Register from "./components/Register";
 import Login from "./components/Login";
@@ -157,6 +157,10 @@ function App() {
             </Popup>
           </>
         )}
+        <div className="leftLogo">
+          <MapOutlined/>
+          <span>Mapify</span>
+        </div>
         {currentUsername ? (
           <button className="button logout" onClick={handleLogout}>
             Log out

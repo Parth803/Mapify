@@ -70,7 +70,14 @@ textarea {
   background-color: red;
   cursor: pointer;
 }
-
+.leftLogo {
+  display: flex;
+  position: absolute;
+  font-size: 18px;
+  top: 10px;
+  left: 10px;
+  color: red;
+}
 .buttons,
 .logout {
   position: absolute;
