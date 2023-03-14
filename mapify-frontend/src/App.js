@@ -1,6 +1,7 @@
 import "./app.css";
-import 'mapbox-gl/dist/mapbox-gl.css'; 
-import { Map, Marker, Popup } from 'react-map-gl';
+import "mapbox-gl/dist/mapbox-gl.css"; 
+import Map from "react-map-gl";
+import { Marker, Popup } from "react-map-gl";
 import { useEffect, useState } from "react";
 import { Room, Star } from "@mui/icons-material"
 import axios from "axios";
@@ -76,7 +77,7 @@ function App() {
 
   return (
     <div className="App">
-      <Map initialViewState={{ longitude: -74.0060, latitude: 40.7128, zoom: 4 }} style={{width: "100vw", height: "100vh"}} mapboxAccessToken={process.env.REACT_APP_MAPBOX} mapStyle="mapbox://styles/mapbox/streets-v9"  onViewportChange={(viewport) => setViewport(viewport)} onDblClick={currentUsername && handleAddClick}>
+      <Map initialViewState={{ longitude: -74.0060, latitude: 40.7128, zoom: 4 }} style={{width: "100vw", height: "100vh"}} mapboxAccessToken={"pk.eyJ1IjoicGFydGg4MDMiLCJhIjoiY2xmN2dvZTY1MDVkZTN4bzEyaGJoYTR3eSJ9.U1jlAgJzw1a9EyhNMs0ubQ"} mapStyle="mapbox://styles/mapbox/streets-v9"  onViewportChange={(viewport) => setViewport(viewport)} onDblClick={currentUsername && handleAddClick}>
         {pins.map((p) => (
           <>
             <Marker latitude={p.lat} longitude={p.long} offsetLeft={-3.5 * viewport.zoom} offsetTop={-7 * viewport.zoom}>
