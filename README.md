@@ -1,7 +1,7 @@
 
 ### Welcome to Mapify - An easy-to-use tour guide for some of the best locations on our planet! - Created by Parth Patel using the MERN tech stack.
 
-<img width="1728" alt="Screenshot 2023-03-13 at 9 55 17 PM" src="https://user-images.githubusercontent.com/125687192/224880026-b0d21e63-3568-4eb2-8473-65ea4af9199e.png">
+<img width="1728" alt="Screenshot 2023-03-14 at 9 45 43 AM" src="https://user-images.githubusercontent.com/125687192/225021160-be3cb4bd-9bbf-4dc9-bc63-662ec7d14992.png">
 
 ### Learning More:
 
